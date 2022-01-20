@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
-	"github.com/olusolaa/inventry/cache"
 	"github.com/olusolaa/inventry/db"
 	swaggerFiles "github.com/swaggo/files"
 	ginSwagger "github.com/swaggo/gin-swagger"
@@ -19,8 +18,7 @@ import (
 
 // Server serves requests to DB with router
 type Server struct {
-	DB    db.DB
-	Cache cache.Cache
+	DB db.DB
 }
 
 // create routers for inventory of items

@@ -1,7 +1,6 @@
 package main
 
 import (
-	"github.com/olusolaa/inventry/cache"
 	"github.com/olusolaa/inventry/db"
 	_ "github.com/olusolaa/inventry/docs"
 	"github.com/olusolaa/inventry/server"
@@ -23,14 +22,11 @@ import (
 // @securityDefinitions.basic  BasicAuth
 func main() {
 
-	var moviesCache = cache.NewRedisCache("localhost:6379", 1, "", 100)
-
 	DB := &db.PostgresDB{}
 	DB.Init()
 
 	s := &server.Server{
-		DB:    DB,
-		Cache: moviesCache,
+		DB: DB,
 	}
 	s.Start()
 }
