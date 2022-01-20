@@ -1,7 +1,7 @@
 {
     "swagger": "2.0",
     "info": {
-        "description": "This is a movie server. You can visit the GitHub repository at https://github.com/olusola/inventory",
+        "description": "This is an inventory server. You can visit the GitHub repository at https://github.com/olusolaa/inventory",
         "title": "Inventory API",
         "contact": {
             "name": "API Support",
@@ -14,7 +14,7 @@
         },
         "version": "1.0"
     },
-    "host": "localhost:8080",
+    "host": "inventory-api-v1.herokuapp.com",
     "basePath": "/",
     "paths": {
         "/api/v1/categories": {

@@ -8,7 +8,7 @@ import (
 
 // @title        Inventory API
 // @version      1.0
-// @description  This is a movie server. You can visit the GitHub repository at https://github.com/olusola/inventory
+// @description  This is an inventory server. You can visit the GitHub repository at https://github.com/olusolaa/inventory
 
 // @contact.name   API Support
 // @contact.url    http://www.swagger.io/support
@@ -17,7 +17,7 @@ import (
 // @license.name  MIT
 // @license.url   https://opensource.org/licenses/MIT
 
-// @host      localhost:8080
+// @host     inventory-api-v1.herokuapp.com
 // @BasePath  /
 // @securityDefinitions.basic  BasicAuth
 func main() {

@@ -499,11 +499,11 @@ type swaggerInfo struct {
 // SwaggerInfo holds exported Swagger Info so clients can modify it
 var SwaggerInfo = swaggerInfo{
 	Version:     "1.0",
-	Host:        "localhost:8080",
+	Host:        "inventory-api-v1.herokuapp.com",
 	BasePath:    "/",
 	Schemes:     []string{},
 	Title:       "Inventory API",
-	Description: "This is a movie server. You can visit the GitHub repository at https://github.com/olusola/inventory",
+	Description: "This is an inventory server. You can visit the GitHub repository at https://github.com/olusolaa/inventory",
 }
 
 type s struct{}
